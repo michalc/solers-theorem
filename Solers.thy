@@ -2,7 +2,8 @@ theory Solers
 imports Main
 begin
 
-lemma "1 = 1"
+lemma
+  shows "1 = 1"
 proof
 qed
 
