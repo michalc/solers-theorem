@@ -7,10 +7,10 @@ theorem
   by auto
 
 theorem
-  shows "A --> A"
+  shows "A --> A \<and> A"
 proof
   assume a: "A"
-  show "A" by(rule a)
+  from a and a show "A \<and> A" ..
 qed
 
 end
