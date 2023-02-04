@@ -10,10 +10,10 @@ theorem
   shows "A \<and> B --> B \<and> A"
 proof
   assume ab: "A \<and> B"
-  from this show "B \<and> A"
+  thus "B \<and> A"
   proof
     assume "B" "A"
-    then show ?thesis ..
+    thus ?thesis ..
   qed
 qed
 
