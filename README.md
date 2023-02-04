@@ -2,7 +2,7 @@
 
 A formalisation of Solèr's theorem using the [Isabelle](https://isabelle.in.tum.de/) proof assistant
 
-> Work-in progress
+> Work-in progress - this is currently a playground for me learning Isabelle
 
 
 ## Verifying proof locally
