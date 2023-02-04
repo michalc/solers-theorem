@@ -2,7 +2,7 @@ theory Solers
 imports Main
 begin
 
-lemma
+theorem
   shows "1 + 1 = 2"
   by auto
 
