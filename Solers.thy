@@ -26,4 +26,12 @@ proof -
   thus "\<exists> y. P y" ..
 qed
 
+theorem
+  shows "\<not> A \<or> A"
+proof (cases "A")
+  case True thus ?thesis ..
+next
+  case False thus ?thesis ..
+qed
+
 end
