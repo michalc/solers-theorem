@@ -5,6 +5,14 @@ A formalisation of Solèr's theorem using the [Isabelle](https://isabelle.in.tum
 > Work-in progress - this is currently a playground for me learning Isabelle
 
 
+## Installation
+
+```bash
+git clone https://github.com/michalc/solers-theorem
+cd solers-theorem
+````
+
+
 ## Verifying proof locally
 
 ```bash
