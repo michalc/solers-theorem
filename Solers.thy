@@ -4,7 +4,9 @@ begin
 
 theorem
   shows "1 + 1 = 2"
-  by auto
+proof -
+  show ?thesis by(auto)
+qed
 
 theorem
   assumes "A \<and> B"
