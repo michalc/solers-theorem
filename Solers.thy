@@ -9,8 +9,8 @@ theorem
 theorem
   shows "A --> A \<and> A"
 proof
-  assume a: "A"
-  from a and a show "A \<and> A" ..
+  assume "A"
+  from this and this show "A \<and> A" ..
 qed
 
 end
