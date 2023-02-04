@@ -2,6 +2,8 @@ theory Solers
 imports Main
 begin
 
+(* Random bits and bobs *)
+
 theorem
   shows "1 + 1 = 2"
 proof -
