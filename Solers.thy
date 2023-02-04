@@ -9,8 +9,8 @@ theorem
 theorem
   shows "A --> A"
 proof
-  assume a: A
-  show A by(rule a)
+  assume a: "A"
+  show "A" by(rule a)
 qed
 
 end
