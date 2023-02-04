@@ -13,7 +13,7 @@ proof
   from this show "B \<and> A"
   proof
     assume "B" "A"
-    from this show ?thesis ..
+    then show ?thesis ..
   qed
 qed
 
