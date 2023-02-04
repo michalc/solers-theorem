@@ -4,7 +4,6 @@ begin
 
 lemma
   shows "1 = 1"
-proof
-qed
+  by auto
 
 end
