@@ -9,7 +9,7 @@ theorem
 theorem
   shows "A \<and> B --> B \<and> A"
 proof
-  assume ab: "A \<and> B"
+  assume "A \<and> B"
   thus "B \<and> A"
   proof
     assume "B" "A"
