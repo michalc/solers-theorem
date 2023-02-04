@@ -7,14 +7,13 @@ theorem
   by auto
 
 theorem
-  shows "A \<and> B --> B \<and> A"
-proof
-  assume "A \<and> B"
-  thus "B \<and> A"
-  proof
-    assume "B" "A"
-    thus ?thesis ..
-  qed
+  assumes "A \<and> B"
+  shows "B \<and> A"
+proof -
+  from `A \<and> B` have "B" ..
+  moreover
+  from `A \<and> B` have "A" ..
+  ultimately show "B \<and> A" ..
 qed
 
 end
