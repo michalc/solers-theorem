@@ -38,6 +38,10 @@ apply (rule impI)
 apply (assumption)
 done
 
+theorem "\<lbrakk> A;B;C;D;E;F \<rbrakk> \<Longrightarrow> A"
+apply (assumption)
+done
+
 (* Random bits and bobs *)
 
 theorem
