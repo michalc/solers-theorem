@@ -2,6 +2,14 @@ theory Solers
 imports Main
 begin
 
+(* From https://www.inf.ed.ac.uk/teaching/courses/ar/tutorials/1/tut1.pdf *)
+
+(* 1 - suspect by(auto) isn't quite in the spirit of the assignment *)
+
+theorem
+  shows "P --> (Q --> R) --> ((P --> Q) --> (P --> R))"
+  by(auto)
+
 (* Random bits and bobs *)
 
 theorem
