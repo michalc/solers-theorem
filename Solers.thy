@@ -10,6 +10,12 @@ theorem
   shows "P --> (Q --> R) --> ((P --> Q) --> (P --> R))"
   by(auto)
 
+(* 1 - slightly more manual style *)
+
+theorem "P --> (Q --> R) --> ((P --> Q) --> (P --> R))"
+apply (auto)
+done
+
 (* Random bits and bobs *)
 
 theorem
