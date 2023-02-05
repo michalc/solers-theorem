@@ -3,6 +3,7 @@ imports Main
 begin
 
 (* From https://www.inf.ed.ac.uk/teaching/courses/ar/tutorials/1/tut1.pdf *)
+(* Or from https://www.inf.ed.ac.uk/teaching/courses/ar//isabelle/Prop.thy *)
 
 (* 1 - suspect by(auto) isn't quite in the spirit of the assignment *)
 
@@ -27,6 +28,12 @@ apply (rule excluded_middle)
 done
 
 theorem "P --> P"
+apply (rule impI)
+apply (assumption)
+done
+
+theorem "A --> (B --> A)"
+apply (rule impI)
 apply (rule impI)
 apply (assumption)
 done
