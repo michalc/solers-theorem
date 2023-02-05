@@ -26,6 +26,11 @@ theorem "\<not> (A \<and> B) \<or> (A \<and> B)"
 apply (rule excluded_middle)
 done
 
+theorem "P --> P"
+apply (rule impI)
+apply (assumption)
+done
+
 (* Random bits and bobs *)
 
 theorem
