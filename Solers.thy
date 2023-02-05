@@ -22,6 +22,10 @@ theorem "\<not> P \<or> P"
 apply (rule excluded_middle)
 done
 
+theorem "\<not> (A \<and> B) \<or> (A \<and> B)"
+apply (rule excluded_middle)
+done
+
 (* Random bits and bobs *)
 
 theorem
