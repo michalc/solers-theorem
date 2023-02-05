@@ -16,6 +16,12 @@ theorem "(P --> (Q --> R)) --> ((P --> Q) --> (P --> R))"
 apply (auto)
 done
 
+(* Attempts to build up to do the above exercises *)
+
+theorem "\<not> P \<or> P"
+apply (rule excluded_middle)
+done
+
 (* Random bits and bobs *)
 
 theorem
