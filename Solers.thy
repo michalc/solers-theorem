@@ -56,6 +56,11 @@ apply (rule conjunct2)
 apply (assumption)
 done
 
+theorem "\<lbrakk> A;\<not> A \<rbrakk> \<Longrightarrow> R"
+apply (erule notE)
+apply (assumption)
+done
+
 (* Random bits and bobs *)
 
 theorem
