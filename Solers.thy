@@ -42,6 +42,20 @@ theorem "\<lbrakk> A;B;C;D;E;F \<rbrakk> \<Longrightarrow> A"
 apply (assumption)
 done
 
+(* Attempt at converting the proof at https://www.youtube.com/watch?v=lLJORsLwN3k in very low level way *)
+theorem "A \<and> (B \<and> C) \<Longrightarrow> (A \<and> B) \<and> C"
+apply (rule conjI)
+apply (rule conjI)
+apply (rule conjunct1)
+apply (assumption)
+apply (rule conjunct1)
+apply (rule conjunct2)
+apply (assumption)
+apply (rule conjunct2)
+apply (rule conjunct2)
+apply (assumption)
+done
+
 (* Random bits and bobs *)
 
 theorem
