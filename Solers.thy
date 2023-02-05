@@ -7,12 +7,12 @@ begin
 (* 1 - suspect by(auto) isn't quite in the spirit of the assignment *)
 
 theorem
-  shows "P --> (Q --> R) --> ((P --> Q) --> (P --> R))"
+  shows "(P --> (Q --> R)) --> ((P --> Q) --> (P --> R))"
   by(auto)
 
 (* 1 - slightly more manual style *)
 
-theorem "P --> (Q --> R) --> ((P --> Q) --> (P --> R))"
+theorem "(P --> (Q --> R)) --> ((P --> Q) --> (P --> R))"
 apply (auto)
 done
 
