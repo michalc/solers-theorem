@@ -17,6 +17,22 @@ theorem "(P --> (Q --> R)) --> ((P --> Q) --> (P --> R))"
 apply (auto)
 done
 
+(* 1 - more manual style and I suspect in the spirit of the question *)
+(* although some of it was trial and error... *)
+
+theorem "(P --> (Q --> R)) --> ((P --> Q) --> (P --> R))"
+apply (rule impI)
+apply (rule impI)
+apply (rule impI)
+apply (erule impE)
+apply (assumption)
+apply (erule impE)
+apply (assumption)
+apply (erule impE)
+apply (assumption)
+apply (assumption)
+done
+
 (* Attempts to build up to do the above exercises *)
 
 theorem "\<not> P \<or> P"
