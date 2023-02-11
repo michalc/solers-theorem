@@ -46,6 +46,15 @@ apply (assumption)
 apply (assumption)
 done
 
+theorem "\<lbrakk> A \<or> B \<rbrakk> \<Longrightarrow> B \<or> A"
+apply (rule disjE)
+apply (assumption) (* Still not completely sure how this works *)
+apply (rule disjI2)
+apply (assumption)
+apply (rule disjI1)
+apply (assumption)
+done
+
 theorem "\<lbrakk> A;B;C;D;E;F \<rbrakk> \<Longrightarrow> A"
 apply (assumption)
 done
