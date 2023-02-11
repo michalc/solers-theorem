@@ -33,6 +33,15 @@ apply (assumption)
 apply (assumption)
 done
 
+(* 2 *)
+
+theorem "\<not> \<not> P --> P"
+apply (rule impI)
+apply (rule ccontr)
+apply (erule notE)
+apply (assumption)
+done
+
 (* Attempts to build up to do the above exercises *)
 
 theorem "\<not> P \<or> P"
