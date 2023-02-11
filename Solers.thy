@@ -38,6 +38,14 @@ apply (rule impI)
 apply (assumption)
 done
 
+theorem "\<lbrakk> P;Q \<rbrakk> \<Longrightarrow> P \<and> (Q \<and> P)"
+apply (rule conjI)
+apply (assumption)
+apply (rule conjI)
+apply (assumption)
+apply (assumption)
+done
+
 theorem "\<lbrakk> A;B;C;D;E;F \<rbrakk> \<Longrightarrow> A"
 apply (assumption)
 done
