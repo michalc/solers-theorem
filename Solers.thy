@@ -55,6 +55,19 @@ apply (rule disjI1)
 apply (assumption)
 done
 
+(* Converting the proof from https://www.inf.ed.ac.uk/teaching/courses/ar//slides03.pdf *)
+theorem "((S \<or> R) \<and> \<not> S) \<longrightarrow> R"
+apply (rule impI)
+apply (rule disjE)
+apply (rule conjunct1)
+apply (assumption)
+apply (rule notE)
+apply (rule conjunct2)
+apply (assumption)
+apply (assumption)
+apply (assumption)
+done
+
 theorem "\<lbrakk> A;B;C;D;E;F \<rbrakk> \<Longrightarrow> A"
 apply (assumption)
 done
