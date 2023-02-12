@@ -2,6 +2,15 @@ theory Solers
 imports Main
 begin
 
+(* Solèr's theorem *)
+(* Baby steps in an attempt to just state it in Isabelle *)
+
+theorem (in division_ring) solers:
+  shows "1 + 1 = 2"
+proof -
+  show ?thesis by(auto)
+qed
+
 (* From https://www.inf.ed.ac.uk/teaching/courses/ar/tutorials/1/tut1.pdf *)
 (* Or from https://www.inf.ed.ac.uk/teaching/courses/ar//isabelle/Prop.thy *)
 
